@@ -1,0 +1,21 @@
+.filter li {
+	display:block;
+	float:left;}
+
+.table-pricing thead .tablecolActive .table_head {
+	position:relative;
+	margin-left:1px}
+
+#header_images div,
+.header_image {
+	opacity:1;}
+
+.toggle.box {
+	background:#f0f0f0;
+	border:1px solid #e2e2e2;}
+
+.newsletter_text {
+	padding-top:0px;}
+
+.frame_box iframe {
+	width:100%}

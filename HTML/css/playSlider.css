@@ -1,0 +1,214 @@
+/* 
+    Document   :  playSlider
+    Created on :  Sept, 2011
+    Author     :  Sancheev Serghei
+    Description:  Slider stylesheet here.
+*/
+.playSlider {
+    width: 960px;
+    height: 497px;
+    position: relative;
+    background-image: -moz-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#fcfcfc), to(#bfbfbf), color-stop(3%, #f7f7f7), color-stop(12%, #f2f2f2), color-stop(90%, #d9d9d9));
+}
+.playSlider ul.slide-content {
+	width: 960px;
+    height: 497px;
+    overflow: hidden;
+    list-style: none;
+    list-style-position: inside;
+    margin-left: 0;
+}
+.playSlider .nextBackControllers {
+    display: block;
+    text-indent: -9999px;
+    outline: none;
+    z-index: 110;
+    width: 119px;
+    height: 49px;
+    position: absolute;
+    bottom: 78px;
+    right: 30px;
+	background:url(../images/playSlider-controllers.png) 0 0 no-repeat
+}
+
+/* prev/next button */
+.playSlider .nextBackControllers a.prev,
+.playSlider .nextBackControllers a.next {
+	background: url(../images/playSlider-prev-next.png) 0 0 no-repeat;
+	width: 28px;
+	height: 28px;
+	float: left;
+	display: block;
+	margin:10px 0 0 5px}
+
+.playSlider .nextBackControllers a.next {
+	background:url(../images/playSlider-prev-next.png) 0 -28px no-repeat;
+	margin:10px 6px 0 0
+}
+.playSlider .nextBackControllers a.prev:hover {
+	background-position: -28px 0;
+}
+.playSlider .nextBackControllers a.next:hover {
+	background-position: -28px -28px;
+}
+
+/* pause/play button */
+.playSlider .nextBackControllers a.pause,
+.playSlider .nextBackControllers a.play {
+	background:url(../images/playSlider-play.png) 0 0 no-repeat;
+	float: left;
+	width: 39px;
+	height: 39px; 
+	display: block;
+	margin:5px 7px 0 6px}
+
+.playSlider .nextBackControllers a.play {
+	background-position:0 -39px;
+}
+.playSlider .nextBackControllers a.play:hover {
+	background-position: -39px -39px;
+}
+.playSlider .nextBackControllers a.pause:hover {
+	background-position:-39px 0;
+}
+
+.playSlider ul.slide-content li {
+    position: absolute;
+    width: 960px;
+    height: 444px;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 0;
+}
+.playSlider ul.slide-content li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+}
+.playSlider .sliderBullets {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 17;
+    margin-left: -45px;
+}
+.playSlider .sliderBullets a {
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    outline: none;
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+   
+}
+.playSlider .sliderBullets .on {
+    background-position: 0 -19px;
+}
+.playSlider a {
+    color: #333840;
+}
+.playSlider a img {
+    border: none;
+}
+.prealoadImages {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+}
+.playSlider .textHolder {
+    height: 79px;
+    padding-top: 20px;
+    background: url(../images/playSlider_caption.png) 0 0 repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
+.playSlider .textHolder p {
+    position: absolute;
+    left: 0;
+    top: 27px;
+    color: #61d3da;
+    font-size: 14px;
+    width: 900px;
+    display: block;
+    font-family:'CartoGothicStdBook', Arial, Helvetica, sans-serif;
+    padding: 0 30px;
+	display:block
+}
+.playSlider .textHolder p strong {
+    font-size: 21px;
+    font-weight: 400;
+   	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+    display: block;
+    padding-bottom: 7px;
+    line-height: 1em;
+	color: #fff;
+}
+.playSlider .textHolder p strong a {
+	color:#fff}
+	
+.playSlider .textHolder h3 {
+    display: none;
+}
+.playSlider .textOverlay {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: 0;
+    display: block;
+    background: url(../images/playSlider_item_active.png) repeat-x #292929;
+}
+.playSlider .progressBar {
+	width: 960px;
+    height: 4px;
+    background: #cecece;
+    position: absolute;
+	z-index: 4;
+	bottom: 49px;
+}
+.playSlider .progressIndicator {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	height: 4px; 
+	width: 1px; 
+	background-color: rgb(53, 212, 236);}
+
+.playSlider .navigation {
+    width: 960px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 49px;
+    background: url(../images/playSlider-navigation-bk.jpg);
+    margin: 0;
+    z-index: 102;
+}
+.playSlider .navigation li {
+    display: block;
+    float: left;
+    margin: 0;
+}
+.playSlider .navigation li a {
+	display: block;
+    height: 49px;
+    line-height: 49px;
+    background: url(../images/playSlider_line_bot.png) repeat-y scroll right top transparent;
+    font-size: 16px;
+    color: #696969;
+    font-family:'CartoGothicStdBook', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+    margin: 0;
+    padding: 0 0 0 23px;
+}
+.playSlider .navigation li a.on, .playSlider .navigation li a:hover {
+	color: #c9c9c9;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Medica Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Medica&rdquo; Documentation by &ldquo;ThemeFuse&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Medica&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 21/10/2011<br>
+					By: <a target="_blank" href="http://themefuse.com">ThemeFuse</a><br>
+					Support Forum: <a target="_blank" href="http://themefuse.com/forum/medica-html/">Medica</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thanks for purchasing this template, in this way supporting our efforts of bringing premium quality design and coding to you. This file contains general usage terms but also some useful information about the files included in the archive. If you have any questions about the theme please feel free to <a target="_blank" href="http://themefuse.com/forum/medica-html/">post on our dedicated support forum</a>. We would love to hep you.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+            <li><a href="#js">JavaScript</a></li>
+			<li><a href="#contact">Contact form</a></li>
+			<li><a href="#seo">Search Engine Optimization </a></li>
+			<li><a href="#psd">PSD Files and Fonts</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+        
+        <h4><strong>Homepage</strong></h4>
+		<p>The basic structure of the pages of the theme is presented in the picture below. As you can easily see, we have a couple of main divs: the <strong>header</strong> (containing the logo, the main menu and the showcase slider), the <strong>middle</strong> (containing the content and the sidebar divs in the pages where the sidebar is present) and finally the <strong>footer</strong> (with the footer links and contact info)  </p>
+		<img src="assets/images/structure.jpg" alt="HTML Structure" />
+		<br><br>
+        
+        <p>Next is the <strong>index page</strong> where you can find the visual representation of the HTML structure.</p>
+        <img src="assets/images/visual_structure.jpg" alt="HTML Structure" />
+		<br><br><br>
+        
+        <p>This how a <strong>secondary page</strong> structure looks like </p>
+        <img src="assets/images/visual_structure_secondary_pages.jpg" alt="HTML Structure" />
+		<br><br><br>
+        
+		<hr>
+
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+        
+		<p>On the CSS side, we load different css files depending on the page that loads.
+<br>
+<h4><strong>How to change a title/font from css</strong></h4>
+
+We recommend using the FireBug add on in Firefox for a fast identification of the css properties that you might want to change. Lets say for example that we want to change the color and add a link to the h1 represented in the picture bolow.</p> 
+
+		<img src="assets/images/h1.jpg" alt="CSS" />       
+        <br /><br />
+		<p>Open the style.css file form the root folder and search h1 until you find the color property in the file. Its on line 595 and it looks line this:<br><br>
+
+<strong>h1, h2, h3, h4, h5, h6</strong> {<br>
+font-weight:normal;<br>
+font-family:'CartoGothicStdBook', Arial, Helvetica, sans-serif;<br>
+color:#474747;<br>
+line-height:1.2em<br>
+}<br><br>
+
+Change the color with the one you want and hit save. Note that you’ve changed the color to all the headings (h1, h2, h3, h4, h5 and h6). If you want to change only the h1 color, you have to separate the h1 and give it another color. The css should look like this.<br><br>
+
+<strong>h2, h3, h4, h5, h6</strong> {<br>
+font-weight:normal;<br>
+font-family:'CartoGothicStdBook', Arial, Helvetica, sans-serif;<br>
+color:#474747;<br>
+line-height:1.2em<br>
+}<br><br>
+
+<strong>h1 </strong>{<br>
+font-weight:normal;<br>
+font-family:'CartoGothicStdBook', Arial, Helvetica, sans-serif;<br>
+color:<em><strong>#custom_color</strong></em>;<br>
+line-height:1.2em<br>
+}<br><br>
+
+Now, lets say we wanted h1 to poin to http://google.com. At this point the h1 looks like this:<br><br>
+
+<strong>&lt;h1&gt;</strong>Typography & paragraph styles (h1)<strong>&lt;/h1&gt;</strong><br><br>
+
+To make it point to a specific URL the h1 must look like this:<br><br>
+
+<strong>&lt;h1&gt;&lt;a href=”http://www.google.com”&gt;</strong>Typography & paragraph styles (h1)<strong>&lt;/a&gt;&lt;/h1&gt;</strong><br><br>
+
+You can make changes to the css to any elements. You just need to know the name of the element or div either by using FireBug or by opening the HTML and then search for that element in the css. Piece of cake!</p><br>
+
+        
+        
+		<hr>
+		
+		<h3 id="js"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This template imports different js files for the different sliders, lightboxes and interactive tabs from the shortcode pages. All the js is built around JQuery. What follows are some examples where jQuery was used:</p>
+		
+		<p><strong>JS Sliders</strong></p>
+        <img src="assets/images/slider.jpg" alt="js" />
+        <br><br>
+        
+        <p><strong>Tabs & Toggles</strong></p>
+        <img src="assets/images/tabs_toggles.jpg" alt="js" />
+        <br><br>
+    
+        <hr>
+		
+		<h3 id="contact"><strong>D) Contact form</strong> - <a href="#toc">top</a></h3>
+		
+<p>In the root folder of the file you’ll find a sendmail.php file. This file takes care of the contact form from the contact us page. Even if the verifications of the form is made by js, this file will not work if you are not uploading it on your server. It needs the PHP server from your host in order to run.</p>
+
+<p>You need to change 2 things before you upload it on your server: the name of your blog, and the email you want the contact form to be sent to. To do this modifications, open the sendmail.php and edit lines 5 and 6 from the file.</p>
+
+<p>If you want to add another input field in the html file, you don’t need to edit the sendmail.php at all, just open the html page where the form is, add another input and if you want that input to be a mandatory field, you have to add the css=”required”. Note that this new input has to have name=”[example]“ and id=”[example]“</p>
+		
+		
+		<hr>
+        
+        <h3 id="seo"><strong>E) Search Engine Optimization</strong> - <a href="#toc">top</a></h3>
+		
+		<p>In order to improve your search engine ranking, and thus enable your web site to appear among search results, please don’t forget to change the description and keywords with your own.</p>	
+        
+        <img src="assets/images/seo.jpg" alt="seo" /><br><br>
+        
+        <p>As a best practice, the keywords from the meta tag are words that you should use in the texts from the page.</p>
+        
+        <hr>
+        
+        <h3 id="psd"><strong>F) PSD Files and Fonts</strong> - <a href="#toc">top</a></h3>
+        
+        <p><strong>PSD Files</strong></p>
+		
+		<p>We’ve included all the psd files designed for the template and used to create the HTML. This files are usually used to create proposals for clients or for modifying different parts of the HTML template.</p> 
+
+
+        
+        <p><strong>Fonts</strong></p>
+		
+		<p>We’ve used font-face and one open font in some of the titles:<br><br>
+			
+            - <a target="_blank" href="http://www.fontsquirrel.com/fonts/CartoGothic-Std">CartoGothic</a> <br>  
+        </p>
+	
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this template. As we said at the beginning, we'd be glad to help you if you have any questions relating to this template, please <a target="_blank" href="http://themefuse.com/forum/medica-html/">come to our dedicated support forum</a>. We would love to help you.</p> 
+		
+		<p class="append-bottom alt large"><strong>ThemeFuse</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
